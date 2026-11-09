@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: rgb(120, 96, 64);
+        }
+
+        #formContainer {
+            border: 10px solid rgb(0, 0, 138);
+            border-radius: 25px;
+            height: 700px;
+            width: 450px;
+            margin-top: 25px;
+            justify-self: center;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        header {
+            background: url(images/jesus_feeds_5000.jpeg);
+            height: 200px;
+            background-size: cover;
+        }
+
+        #closeBtn {
+            margin-top: 10px;
+            margin-left: 12px;
+        }
+
+        header h1, header h2 {
+            color: white;
+            text-shadow: 2px 2px black;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-top: 50px;
+            font-size: 2.5em;
+        }
+
+        header h2 {
+            font-size: 2em;
+            font-weight: normal;
+            margin-top: 0px;
+        }
+
+        h3 {
+            font-weight: 900;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        #main_inputs {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 10px 1fr 1fr 10px;
+            gap: 30px;
+        }
+
+        #main_inputs label {
+            grid-column: 2/3;
+        }
+
+        #main_inputs input {
+            width: 170px;
+            max-height: 18px;
+            grid-column: 3/4;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="formContainer">
+        <form id="myForm">
+            <header>
+                <button type="button" id="closeBtn">X</button>
+
+                <h1>Daily Feed</h1>
+
+                <h2>Scripture a Day</h2>
+            </header>
+
+            <h3>Sign Up for Daily Scripture Feed</h3>
+
+            <div id="main_inputs">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+
+            <label>Gender:</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <section>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </section>
+
+            <section>
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">I acknowledge the terms and conditions</label>
+            </section>
+
+            <section>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        // Here is some Javascript to start looking forward to wdd131
+        document.getElementById("closeBtn").addEventListener("click", function () {
+            document.getElementById("formContainer").style.display = "none";
+         });
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop form from actually submitting
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+                if (key == "password") {
+                    entries.push(`<strong>${key}</strong>: ${value} (you should probably encrypt the password)`);
+                } else {
+                    entries.push(`<strong>${key}</strong>: ${value}`);
+                }
+            }
+
+            output.innerHTML = `
+            <br>  
+            <h3>Here is the data that would be sent to the server:</h3>
+            <ul>
+                ${entries.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            `;
+                });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        /* Insert styles here */
+        body {
+            background: #E8ECED;
+        }
+
+        #spotlight-base {
+            background: url(images/christus.webp);
+            border: 7px solid black;
+            width: 700px;
+            height: 525px;
+            margin: 0 auto;
+            border-radius: 25px;
+            background-size: cover;
+            background-position-x: -178px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: normal;
+        }
+
+        h1{
+            margin-top: 7px;
+            margin-bottom: 2px;
+        }
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+
+        #header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 425px;
+            margin: auto;
+            margin-bottom: -4px;
+        }
+
+        #lower {
+            display: grid;
+            grid-template: 1fr 1fr 1fr / 1fr;
+        }
+
+        .pres {
+            width: 110px;
+            height: 110px;
+            border: 6px solid white;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 0px -8px;
+            margin: 0 auto;
+        }
+
+        .firstp {
+            width: 96px;
+            height: 96px;
+            border: 6px solid white;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 0px -4px;
+            margin: 0 auto;
+            margin-top: 14px;
+        }
+
+        #apostle {
+            width: 70px;
+            height: 70px;
+             border: 6px solid white;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 0px 0px;
+            margin-right: 12px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+     <div id="spotlight-base">
+        <h1>First Presidency</h1>
+
+        <div id="header">
+            <img class="firstp" src="images/eyring.webp" alt="Henry B. Eyring">
+            <img class="pres" src="images/oaks.webp" alt="Dallin H. Oaks">
+            <img class="firstp" src="images/christofferson.webp" alt="D, Todd Christofferson">
+        </div>
+
+        <h2>Quorum of the Twelve Apostles</h2>
+
+        <section id="lower">
+            <div id="row-1">
+                <img id="apostle" src="images/uchtdorf.webp" alt="">
+                <img id="apostle" src="images/bednar.webp" alt="">
+                <img id="apostle" src="images/cook.webp" alt="">
+                <img id="apostle" src="images/anderson.webp" alt="">
+            </div>
+
+            <div id="row-2">
+                <img id="apostle" src="images/rasband.webp" alt="">
+                <img id="apostle" src="images/stevenson.webp" alt="">
+                <img id="apostle" src="images/renlund.webp" alt="">
+                <img id="apostle" src="images/gong.webp" alt="">
+            </div>
+            
+            <div id="row-3">
+                <img id="apostle" src="images/soares.webp" alt="">
+                <img id="apostle" src="images/kearon.webp" alt="">
+                <img id="apostle" src="images/causse.webp" alt="">
+                <img id="apostle" src="images/gilbert.webp" alt="">
+            </div>
+        </section>
+     </div>
+</body>
+</html>

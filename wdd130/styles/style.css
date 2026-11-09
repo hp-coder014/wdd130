@@ -1,0 +1,192 @@
+/* Color Palette
+brown: #761129 
+blue: #067AC0
+green: #AFB606
+orange: #F29E05
+white: #FDEFDE
+red: #D90504
+*/
+
+@font-face {
+    font-family: scraps;
+    src: url(../fonts/PolandCannedIntoKaito-G3ErD.otf);
+}
+
+body {
+    background-color: #FDEFDE;
+}
+
+#header {
+    background-color: #AFB606;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 100px 1fr 1.5fr 1fr 1fr 0.2fr;
+    place-items: center;
+    text-align: center;
+}
+
+#logo {
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#nav_link {
+    color: #067AC0;
+    font-family: 'Courier New', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+#nav_link:hover {
+    color: #FDEFDE;
+}
+
+#nav_link_last {
+    color: #067AC0;
+    font-family: 'Courier New', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#nav_link_last:hover {
+    color: #FDEFDE;
+    margin-right: 20px;
+}
+
+#whole_title {
+    justify-items: center;
+    justify-content: center;
+    background-color: #D90504;
+    padding: 5px;
+}
+
+#title_img_container {
+    background-color: #D90504;
+    width: 100%;
+    height: 400px;
+    background: url(../images/mail_placeholder.jpeg);
+    margin: 0 auto;
+    background-size: cover;
+    text-align: center;
+    object-fit: cover;
+}
+
+#title {
+    font-family: scraps, 'Courier New', Courier, monospace;
+    font-size: 70px;
+    color: #FDEFDE;
+    background-color: #D90504;
+    padding: 0%;
+    margin: 0%;
+    margin-bottom: -9px;
+}
+
+#top_button {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 4px dashed #FDEFDE; 
+  background-color: #D90504; /* Set a background color */
+  color: #FDEFDE; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  font-size: 18px; /* Increase font size */
+  height: 60px;
+  width: 60px;
+  font-family: 'Courier New', Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#top_button:hover {
+  background-color: #067AC0;
+}
+
+#letter1 {
+    background-color: #F29E05;
+    color: #761129;
+    font-family: 'Courier New', Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    height: 25em;
+    align-self: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    word-wrap: normal;
+    word-break: break-all;
+}
+
+#letter1_img {
+    float: left;
+    height: 390px;
+    margin: 5px;
+}
+
+#letter1 p {
+    padding: 1em;
+    word-wrap: normal;
+}
+
+#letter2 {
+    background-color: #067AC0;
+    width: 90%;
+    height: 25em;
+    align-self: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#letter2_img {
+    float: right;
+    grid-column: 2/3;
+    height: 390px;
+    margin: 5px;
+}
+
+#letter2 table {
+    grid-column: 1/2;
+}
+
+#letter3 {
+    background-color: #AFB606;
+    font-family: 'Courier New', Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    height: 25em;
+    align-self: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#letter3_list {}
+
+#letter3_img {
+    float: left;
+    height: 390px;
+    margin: 5px;
+    grid-column: 1/2;
+}
+
+footer {
+    background-color: #761129;
+    color: #FDEFDE;
+    font-family: 'Courier New', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    height: 10em;
+    grid-column: 2/3;
+}

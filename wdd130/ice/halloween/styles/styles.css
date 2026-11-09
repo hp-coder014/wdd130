@@ -1,0 +1,234 @@
+
+/* =================================
+   GREEN GHOST SLIME HALLOWEEN THEME
+   ================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Nunito:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 30px 15px;
+    font-family: 'Nunito', sans-serif;
+    color: #e6ffd8;
+    background:
+        radial-gradient(ellipse at 50% 0%, #254b16 0%, transparent 55%),
+        linear-gradient(135deg, #071407, #101f0b 50%, #030903);
+}
+
+/* Main container */
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: rgba(8, 23, 9, 0.96);
+    border: 2px solid #65ff35;
+    border-radius: 22px 22px 35px 35px;
+    box-shadow:
+        0 0 15px rgba(100, 255, 50, 0.45),
+        0 0 45px rgba(70, 255, 0, 0.15);
+}
+
+/* Navigation */
+header {
+    background-color: #3c7c19;
+    border-bottom: 3px solid #8dff50;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 22px 15px;
+    list-style: none;
+}
+
+nav li {
+    padding: 10px 16px;
+    color: #eaffdf;
+    font-family: 'Creepster', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 20px 20px 12px 12px;
+    transition: all 0.3s ease;
+}
+
+nav li:hover {
+    color: #172b0b;
+    background: #a6ff4d;
+    border-color: #e3ffc5;
+    box-shadow: 0 0 18px #80ff28;
+    transform: translateY(-4px) rotate(-2deg);
+}
+
+/* Main content */
+main {
+    padding: 35px;
+    text-align: center;
+}
+
+/* Ghostly title */
+h1 {
+    margin-bottom: 30px;
+    color: #a4ff4f;
+    font-family: 'Nosifer', cursive;
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    line-height: 1.5;
+    text-shadow:
+        0 0 5px #caff9a,
+        0 0 15px #7bff26,
+        0 0 30px #42ff00;
+    animation: ghostGlow 3s ease-in-out infinite alternate;
+}
+
+/* Halloween image */
+main img {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 40px;
+    border: 3px solid #80ff36;
+    border-radius: 25px 25px 45px 45px;
+    box-shadow:
+        0 0 15px rgba(118, 255, 50, 0.5),
+        0 0 35px rgba(118, 255, 50, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+main img:hover {
+    transform: scale(1.025) rotate(1deg);
+    box-shadow:
+        0 0 25px #9aff54,
+        0 0 50px rgba(100, 255, 0, 0.5);
+}
+
+/* Slime-covered sections */
+section {
+    position: relative;
+    margin: 28px 0;
+    padding: 25px;
+    text-align: left;
+    background: linear-gradient(135deg, #183719, #0c200e);
+    border: 1px solid #4d9c35;
+    border-left: 6px solid #8aff35;
+    border-radius: 8px 25px 12px 25px;
+    box-shadow:
+        inset 0 0 18px rgba(90, 255, 40, 0.06),
+        0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Glowing slime on hover */
+section:hover {
+    background: linear-gradient(135deg, #254e20, #102c11);
+    border-color: #a3ff65;
+    border-left-color: #d1ff70;
+    box-shadow:
+        0 0 18px rgba(103, 255, 51, 0.25),
+        inset 0 0 20px rgba(103, 255, 51, 0.08);
+    transform: translateY(-4px);
+}
+
+/* Section headings */
+h2 {
+    margin-bottom: 14px;
+    color: #b4ff5e;
+    font-family: 'Creepster', cursive;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(118, 255, 38, 0.55);
+}
+
+/* Paragraphs */
+p {
+    color: #d4eacb;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* Footer */
+footer {
+    padding: 25px 15px;
+    text-align: center;
+    color: #c6ff8a;
+    font-family: 'Creepster', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #183b12, #091508);
+    border-top: 3px solid #65d832;
+    text-shadow: 0 0 10px rgba(119, 255, 42, 0.6);
+}
+
+/* Ghostly glowing animation */
+@keyframes ghostGlow {
+    from {
+        text-shadow:
+            0 0 5px #caff9a,
+            0 0 12px #7bff26;
+    }
+
+    to {
+        text-shadow:
+            0 0 10px #e1ffc7,
+            0 0 25px #80ff28,
+            0 0 40px #45ff00;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #wrapper {
+        border-radius: 15px;
+    }
+
+    main {
+        padding: 22px 15px;
+    }
+
+    nav ul {
+        gap: 3px;
+        padding: 12px 5px;
+    }
+
+    nav li {
+        padding: 8px 10px;
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
+
+/* Accessibility: reduce motion when requested */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

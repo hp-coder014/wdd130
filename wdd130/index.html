@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <img id="logo" src="images/portalpage_logo.png" alt="">
+
+            <a id="nav_link" href="wwr/index.html">WWR</a>
+            <a id="nav_link" href="">In Class Exercises</a>
+            <a id="nav_link" href="">Final</a>
+            <a id="nav_link_last" href="">About Me</a>
+        </nav>
+    </header>
+    
+    <div id="whole_title">
+    <h1 id="title">Portal Page</h1>
+    <div id="title_img_container"></div>
+    </div>
+
+    <button onclick="topFunction()" id="top_button" title="Go to top">Top</button>
+
+    <div id="letter1">
+        <img id="letter1_img" src="images/rafting_dragon.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempora, aspernatur facere voluptas reprehenderit nisi molestiae totam! 
+            Vitae porro repellat vero provident, voluptatum dolorem placeat quod ratione error soluta ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Earum necessitatibus voluptate deleniti dolore optio qui quod nisi commodi, fugiat, corrupti doloremque laudantium. 
+            Quis expedita, nisi autem ratione provident sit corporis.
+        </p>
+    </div>
+
+    <div id="letter2">
+        <table>
+            <tr>
+                <th>table</th>
+                <th>content</th>
+            </tr>
+            <tr>
+                <td>lorem ipsem</td>
+                <td>lorem ipsem</td>
+            </tr>
+            <tr>
+                <td>lorem ipsem</td>
+                <td>lorem ipsem</td>
+            </tr>
+            <tr>
+                <td>lorem ipsem</td>
+                <td>lorem ipsem</td>
+            </tr>
+        </table>
+        <img id="letter2_img" src="images/icecube_dragon.png" alt="">
+    </div>
+
+    <div id="letter3">
+        <img id="letter3_img" src="images/founders_dragon.png" alt="">
+        <ul id="letter3_list">
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Modi dolores sed animi doloribus commodi!</li>
+            <li>Optio vitae consequatur quisquam, aspernatur officia, autem debitis perferendis</li>
+        </ul>
+    </div>
+
+    <footer>
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name_">
+
+          <label for="number">Number</label>
+          <input type="text" id="number" name="number_">
+          
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email_">
+          
+          <input type="submit" value="Submit" id="submit">
+        </form>
+    </footer>
+</body>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table class="steelBlueCols">
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Elder James O. Fantone</td>
+            <td>The Battle Is the Lord's</td>
+            <td>BYUI</td>
+            <td>2026</td>
+          </tr>
+          <tr>
+            <td>Sister Jennifer E. Meredith</td>
+            <td>Remember, Seek Revelation, and Prepare to Change</td>
+            <td>BYUI</td>
+            <td>2026</td>
+          </tr>
+          <tr>
+            <td>Elder David A. and Sister Susan K. Bednar</td>
+            <td>BYU-Idaho 25th Anniversary Devotional</td>
+            <td>BYUI</td>
+            <td>2026</td>
+          </tr>
+        </table>
+
+        <form action="/action_page.php">
+          <label for="speaker">Speaker</label>
+          <input type="text" id="speaker" name="speaker_">
+
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title_">
+          
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location_">
+
+          <label for="year">Year</label>
+          <input type="text" id="year" name="year_">
+          
+          <input type="submit" value="Submit" id="submit">
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

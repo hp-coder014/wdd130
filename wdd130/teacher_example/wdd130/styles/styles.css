@@ -1,0 +1,127 @@
+body {
+    background: #67DAFB;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: YellowBanana;
+    src: url("../fonts/YellowBanana.otf");
+}
+
+#wrapper {
+    border: 5px solid #09193B;
+    border-radius: 25px;
+    width: 900px;
+    background: #ffffff;
+    /* Margin centering trick */
+    margin: 20px auto;
+}
+
+header {
+    height: 140px;
+    text-align: center;
+}
+
+header img {
+    float: left;
+}
+
+nav {
+    background-color: #fddd26;
+    border-top: 5px solid #09193B;
+    border-bottom: 5px solid #09193B;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: YellowBanana;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+nav li {
+    display: flex;
+    border: #ffffff solid 3px;
+    border-radius: 50%;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: #67DAFB;
+}
+
+nav li a {
+    border: #09193B solid 3px;
+    width: 100%;
+    height: 100%;
+    /* keep box model in width bounds */
+    box-sizing:border-box;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* pseudo class */
+nav li a:hover {
+    background: #ff7c15;
+    box-shadow: #ffffff 0px 0px 7px 14px;
+    color: #fddd26;
+    transform: rotate(-42deg);
+}
+
+section {
+    border: solid #09193B 5px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.bubble img {
+    height: 200px;
+}
+
+.bubble {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#ads {
+    padding: 10px;
+}
+
+#contact {
+    color: #09193B;
+    background-color: #FF7C15EE;
+    min-height: 200px;
+    padding: 10px;
+    border: 3px solid #fddd26;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    position: fixed;
+    bottom: -328px;
+    right: 5px;
+    
+    transition: bottom 3s ease-in-out;
+    z-index: 5;
+
+}
+
+#contact:hover {
+  bottom: 0;
+  transition: bottom 2s ease-in-out;
+}
+
